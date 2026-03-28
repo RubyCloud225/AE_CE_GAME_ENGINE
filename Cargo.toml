@@ -1,0 +1,20 @@
+[package]
+name = "AE_CE_Engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# the graphics API
+wgpu = "23.0"
+
+# ECS
+bevy_ecs = "0.15"
+
+#image & serialisation
+image = "0.25"
+serde = { version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+
+# Windowing and Time
+winit = "0.29"  # Handles creating the window and input
+instant = "0.1" #Cross platform time for Delta Time calculations
